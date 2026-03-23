@@ -50,14 +50,12 @@ User → Role → Permission
 
 ### 前端
 
-```bash
 cd frontend
 npm install
 npm run dev
 
 ### 后端
 
-```bash
 cd backend
 npm install
 node app.js
@@ -88,3 +86,5 @@ node app.js
  
 ## 👨‍💻 作者
 - Yangjin
+
+```bash
