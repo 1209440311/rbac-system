@@ -16,4 +16,4 @@ const checkPermission = (permission) => {
         next()
     }
 };
-export default checkPermission
+module.exports = checkPermission
