@@ -299,9 +299,9 @@ const deleteUser = async (userId) => {
 
 // 退出登录（已在 Sidebar 组件中处理）
 const logout = () => {
-  Cookies.remove('token')
-  Cookies.remove('user')
-  Cookies.remove('permissions')
+  Cookies.remove('token', { path: '/' })
+  Cookies.remove('user', { path: '/' })
+  Cookies.remove('permissions', { path: '/' })
   router.push('/login')
 }
 

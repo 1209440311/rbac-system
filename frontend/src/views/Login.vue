@@ -54,9 +54,10 @@ const login = async () => {
 
         // 将 token 和 user 和 permissions 信息存储到 cookie 中（有效期 7 天）
         // withConverter: false 选项会禁用 js-cookie 的自动 URL 编码功能，确保数据正确存储和获取
-        Cookies.set('token', data.data.token, { expires: 7, withConverter: false })
-        Cookies.set('user', JSON.stringify(data.data.user), { expires: 7, withConverter: false })
-        Cookies.set('permissions', JSON.stringify(data.data.permissions), { expires: 7, withConverter: false })
+        // path: '/' 确保 Cookie 在整个域名下可用
+        Cookies.set('token', data.data.token, { expires: 7, path: '/', withConverter: false })
+        Cookies.set('user', JSON.stringify(data.data.user), { expires: 7, path: '/', withConverter: false })
+        Cookies.set('permissions', JSON.stringify(data.data.permissions), { expires: 7, path: '/', withConverter: false })
 
         // 跳转到用户列表页面
         router.push('/users')
