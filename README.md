@@ -50,23 +50,19 @@ User → Role → Permission
 
 ### 前端
 
-cd frontend
-npm install
-npm run dev
+- cd frontend
+- npm install
+- npm run dev
 
 ### 后端
 
-cd backend
-npm install
-node app.js
+- cd backend
+- npm install
+- node app.js
 
 ---
 
 ## 🌐 在线体验（待部署）
-
----
-
-## 👉 （后续补充）
 
 ---
 
