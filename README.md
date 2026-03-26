@@ -46,6 +46,18 @@ User → Role → Permission
 
 ---
 
+## 🌐 在线体验（待部署）
+- 👉 https://rbac-system-mu.vercel.app/
+
+### 👤 测试账号
+- admin / 123456
+
+### ⚠️ 说明
+- 当前为演示版本，部分接口使用 Mock 数据
+- 完整后端请本地运行（见下方说明）
+
+---
+
 ## 🚀 本地运行
 
 ### 前端
@@ -59,10 +71,6 @@ User → Role → Permission
 - cd backend
 - npm install
 - node app.js
-
----
-
-## 🌐 在线体验（待部署）
 
 ---
 

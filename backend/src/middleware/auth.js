@@ -25,7 +25,7 @@ const authMiddleware = (req, res, next) => {
 
   try {
     // 验证 token 是否有效，并解码
-    const decoded = jwt.verify(token, process.env.JWT_SECRET)
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'mock-jwt-secret-for-demo')
 
     // 将解码后的用户信息附加到请求对象上
     req.user = decoded

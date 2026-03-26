@@ -3,8 +3,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const userService = require('./userService')
 
-const SECRET = process.env.JWT_SECRET
-console.log('JWT_SECRET:', process.env.JWT_SECRET)
+const SECRET = process.env.JWT_SECRET || 'mock-jwt-secret-for-demo'
 
 // 注册
 const register = async (username, password) => {
